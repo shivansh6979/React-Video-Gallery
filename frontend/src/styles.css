@@ -1,0 +1,134 @@
+* {
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1pc;
+  background-color: #d5def5;
+  overflow: scroll;
+  height: 250px;
+}
+
+.flex-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #d5def5;
+  padding: 25px 0px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  box-shadow: inset 0 0 40px #8594e4;
+  scroll-behavior: smooth;
+}
+
+.card {
+  background-color: #8594e4;
+  width: 350px;
+  height: 390px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px white;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+video {
+  border-radius: 10px;
+  height: 200px;
+}
+
+.span-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+
+.tags {
+  background-color: aliceblue;
+  border-radius: 7px;
+  padding: 2px;
+  color: #8594e4;
+}
+
+.tags-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  background-color: #8594e4;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  gap: 12px;
+  font-family: "Kaushan Script", cursive;
+  font-size: large;
+  color: aliceblue;
+}
+
+.footer {
+  background-color: #8594e4;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.search {
+  background-color: #d5def5;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  width: 50vw;
+  height: 27px;
+  border-radius: 10px;
+  border: #8594e4;
+}
+button {
+  width: 80px;
+  height: 29px;
+  border-radius: 10px;
+  border: #8594e4;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #8594e4;
+  color: azure;
+}
