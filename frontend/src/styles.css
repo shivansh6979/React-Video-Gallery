@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 18px;
   background-color: #d5def5;
   padding: 25px 0px;
 }
@@ -36,7 +36,7 @@
 
 .card {
   background-color: #8594e4;
-  width: 350px;
+  width: 330px;
   height: 390px;
   border-radius: 10px;
   margin-top: 10px;

@@ -7,7 +7,7 @@ const videoCard = ({ video }) => {
     <div className="card">
       <video
         controls="controls"
-        src={video.videos.small.url}
+        src={video.videos.tiny.url}
         width="320"
         height="240"
         autoPlay={false}
