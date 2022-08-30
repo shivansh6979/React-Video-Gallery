@@ -34,6 +34,11 @@
   scroll-behavior: smooth;
 }
 
+.message {
+  background-color: #d5def5;
+  margin: 0px;
+}
+
 .card {
   background-color: #8594e4;
   width: 330px;

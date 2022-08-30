@@ -32,7 +32,9 @@ function App() {
     <div className="App">
       <Header />
       <VideoSearch searchText={(text) => SetTerm(text)} />
-      {!loading && videos.length === 0 && <h1>No Images Found</h1>}
+      {!loading && videos.hits.length === 0 && (
+        <h1 className="message">No Images Found</h1>
+      )}
       <VideoSlider videos={videos} />
       <div className="flex-main">
         {loading ? (
