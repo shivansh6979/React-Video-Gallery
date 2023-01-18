@@ -137,3 +137,7 @@ button:hover {
   background-color: #8594e4;
   color: azure;
 }
+
+.videopage {
+  min-height: 80vh;
+}

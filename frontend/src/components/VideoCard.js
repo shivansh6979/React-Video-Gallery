@@ -1,7 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const videoCard = ({ video }) => {
+const VideoCard = ({ video }) => {
+  //converting an string into an array
   const tags = video.tags.split(",");
+
+  const navigate = useNavigate();
+
+  const clickHandler = () => {
+    navigate("/VideoPage", { state: { data: video } });
+  };
 
   return (
     <div className="card">
@@ -13,7 +21,7 @@ const videoCard = ({ video }) => {
         autoPlay={false}
         key={video.id}
       />
-      <h3>Credit :{video.user}</h3>
+      <h3 onClick={() => clickHandler()}>Credit :{video.user}</h3>
       <div className="span-flex">
         <span>
           <strong>Views: {video.views}</strong>
@@ -39,4 +47,4 @@ const videoCard = ({ video }) => {
   );
 };
 
-export default videoCard;
+export default VideoCard;
